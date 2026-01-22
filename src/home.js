@@ -5,14 +5,20 @@ export default function loadHome() {
 
     //Clear div before loading anything (essentially for tab switching)
     contentDiv.innerHTML = "";
+    contentDiv.className = "home-tab";
 
-    const headLine = document.createElement("h1");
-    headLine.textContent = "Welcome to our classy Restaurant!";
+    const title = document.createElement("h1");
+    title.textContent = "Midnight Lounge";
 
-    const description = document.createElement("p");
-    description.textContent = "We have the best food in town, made with passion!";
+    const tagLine = document.createElement("h3");
+    tagLine.textContent = "Taste the Atmosphere";
+    tagLine.style.fontStyle = "Italic";
+    tagLine.style.marginBottom = "20px";
 
-    contentDiv.appendChild(headLine);
-    contentDiv.appendChild(description);
+    const text = document.createElement("p");
+    text.textContent = "Experience culinary alchemy in the heart of the city. We blend shadow and light to bring you flavors that exist only in your wildest dreams. Perfect for late-night cravings and sophisticated palates.";
 
+    contentDiv.appendChild(title);
+    contentDiv.appendChild(tagLine);
+    contentDiv.appendChild(text);
 }
