@@ -1,7 +1,7 @@
 import "./style.css";
 import "./home.js";
 import "./menu.js";
-//import "./contact.js";
+import "./contact.js";
 
 import loadHome from "./home.js";
 import loadMenu from "./menu.js";
