@@ -114,15 +114,17 @@ p {
 
 .menu-item {
     border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
-    padding: 15px 0;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    text-align: left;
 }
 
-.menu-item:last-child {
+.menu-item.last {
     border-bottom: none;
 }
+
 
 .price {
     color: var(--gold);

@@ -33,7 +33,7 @@ export default function loadMenu() {
         categoryTitle.className = "menu-category";
         contentDiv.appendChild(categoryTitle);
 
-        items.forEach(item => {
+        items.forEach( (item, index) => {
 
             const itemDiv = document.createElement("div");
             itemDiv.classList.add("menu-item");
@@ -61,6 +61,10 @@ export default function loadMenu() {
             itemDiv.appendChild(price);
 
             contentDiv.appendChild(itemDiv);
+
+            if (index === items.length - 1) {
+                itemDiv.classList.add("last");
+            }
         });
     };
 
