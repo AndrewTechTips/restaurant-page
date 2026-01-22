@@ -1,5 +1,10 @@
-import loadHome from "./home";
-import loadMenu from "./menu";
+import "./style.css";
+import "./home.js";
+import "./menu.js";
+//import "./contact.js";
+
+import loadHome from "./home.js";
+import loadMenu from "./menu.js";
 
 loadHome();
 
