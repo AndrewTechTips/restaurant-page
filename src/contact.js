@@ -7,17 +7,28 @@ export default function loadContact() {
     title.textContent = "Contact Us";
 
     const text = document.createElement("p");
-    text.textContent = "We are hidden in plain sight. Reservations are essential.";
+    text.textContent = "Hidden in plain sight. Reservations are essential.";
 
     const infoContainer = document.createElement("div");
     infoContainer.classList.add("contact-info");
+    infoContainer.style.textAlign = "left";
+    infoContainer.style.display = "inline-block";
 
     infoContainer.innerHTML = `
-        <p>📍 <strong>Address:</strong> 123 Shadow Avenue, Moonlight District</p>
-        <p>📞 <strong>Phone:</strong> +1 (555) 000-DARK</p>
-        <p>✉️ <strong>Email:</strong> reserve@midnightlounge.com</p>
-        <div style="margin-top: 20px; font-size: 0.9em; color: #ffd700;">
-            *Open from Sunset to Sunrise
+        <div style="margin-bottom: 15px;">
+            <i class="fas fa-map-marker-alt" style="color: var(--gold); width: 25px;"></i> 
+            123 Shadow Avenue, Moonlight District
+        </div>
+        <div style="margin-bottom: 15px;">
+            <i class="fas fa-phone" style="color: var(--gold); width: 25px;"></i> 
+            +1 (555) 000-DARK
+        </div>
+        <div style="margin-bottom: 15px;">
+            <i class="fas fa-envelope" style="color: var(--gold); width: 25px;"></i> 
+            reserve@midnightlounge.com
+        </div>
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; color: var(--gold);">
+            <i class="far fa-clock"></i> Open from Sunset to Sunrise
         </div>
     `;
 
