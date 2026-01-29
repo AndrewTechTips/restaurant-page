@@ -1,12 +1,14 @@
 {
   "name": "restaurant-page",
+  "homepage": "https://AndrewTechTips.github.io/restaurant-page",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack serve --open"
+    "start": "webpack serve --open",
+    "deploy": "npm run build && gh-pages -d dist -r https://github.com/AndrewTechTips/restaurant-page.git"
   },
   "repository": {
     "type": "git",
@@ -18,9 +20,9 @@
   "bugs": {
     "url": "https://github.com/AndrewTechTips/restaurant-page/issues"
   },
-  "homepage": "https://github.com/AndrewTechTips/restaurant-page#readme",
   "devDependencies": {
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.6",
     "style-loader": "^4.0.0",
     "webpack": "^5.104.1",
